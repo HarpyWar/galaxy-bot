@@ -6,14 +6,15 @@ class Config
 {
 	public static $Trade = true;
 
+	// upgrade can be set to false or to level from 1 to 10
 	public static $UpgradeCenter = false;
-	public static $UpgradeMine = true;
+	public static $UpgradeMine = 10;
 	public static $UpgradeEnergy = false;
 	public static $UpgradeCosmoport = false;
-	public static $UpgradeSupply = false; // do not required if trade every minute
+	public static $UpgradeSupply = 5; // not required very high if trade every minute and it close to the main planet
 	public static $UpgradeRadar = false;
 	public static $UpgradeTrade = false;
-	public static $UpgradeTrainer = true;
+	public static $UpgradeTrainer = false;
 	public static $UpgradeTurret = false;
 	public static $UpgradeShield = false;
 

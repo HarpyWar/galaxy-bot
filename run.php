@@ -51,25 +51,25 @@ while (true)
 					continue;
 
 
-				if (!Config::$UpgradeCenter && $g->building_id == BuildingType::Center)
+				if ((!Config::$UpgradeCenter || $g->level > Config::$UpgradeCenter) && $g->building_id == BuildingType::Center)
 					continue;
-				if (!Config::$UpgradeMine && $g->building_id == BuildingType::Mine)
+				if ((!Config::$UpgradeMine || $g->level > Config::$UpgradeMine) && $g->building_id == BuildingType::Mine)
 					continue;
-				if (!Config::$UpgradeEnergy && $g->building_id == BuildingType::Energy)
+				if ((!Config::$UpgradeEnergy || $g->level > Config::$UpgradeEnergy) && $g->building_id == BuildingType::Energy)
 					continue;
-				if (!Config::$UpgradeCosmoport && $g->building_id == BuildingType::Cosmoport)
+				if ((!Config::$UpgradeCosmoport || $g->level > Config::$UpgradeCosmoport) && $g->building_id == BuildingType::Cosmoport)
 					continue;
-				if (!Config::$UpgradeSupply && $g->building_id == BuildingType::Supply)
+				if ((!Config::$UpgradeSupply || $g->level > Config::$UpgradeSupply) && $g->building_id == BuildingType::Supply)
 					continue;
-				if (!Config::$UpgradeRadar && $g->building_id == BuildingType::Radar)
+				if ((!Config::$UpgradeRadar || $g->level > Config::$UpgradeRadar) && $g->building_id == BuildingType::Radar)
 					continue;
-				if (!Config::$UpgradeTrade && $g->building_id == BuildingType::Trade)
+				if ((!Config::$UpgradeTrade || $g->level > Config::$UpgradeTrade) && $g->building_id == BuildingType::Trade)
 					continue;
-				if (!Config::$UpgradeTrainer && $g->building_id == BuildingType::Trainer)
+				if ((!Config::$UpgradeTrainer || $g->level > Config::$UpgradeTrainer) && $g->building_id == BuildingType::Trainer)
 					continue;
-				if (!Config::$UpgradeTurret && $g->building_id == BuildingType::Turret)
+				if ((!Config::$UpgradeTurret || $g->level > Config::$UpgradeTurret) && $g->building_id == BuildingType::Turret)
 					continue;
-				if (!Config::$UpgradeShield && $g->building_id == BuildingType::Shield)
+				if ((!Config::$UpgradeShield || $g->level > Config::$UpgradeShield) && $g->building_id == BuildingType::Shield)
 					continue;
 		
 				$api->log("upgrade " . $g->building_id);
