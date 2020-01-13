@@ -1,0 +1,25 @@
+{
+    "incoming_movements": [{
+            "id": 1768335,
+            "type": 3,
+            "remaining": 2159,
+            "start": {
+                "id": 97607,
+                "resource_id": 1,
+                "display_name": "Gacrion",
+                "x": 84062,
+                "y": 88449
+            },
+            "end": {
+                "id": 90504,
+                "resource_id": 3,
+                "display_name": "Copria",
+                "x": 86133,
+                "y": 94003
+            },
+            "resources": [],
+            "units": []
+        }
+    ],
+    "outgoing_movements": []
+}
