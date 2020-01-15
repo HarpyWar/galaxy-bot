@@ -70,13 +70,23 @@ class GalaxyAPI
 
 	public function Train($unitType, $quantity, $gridId)
 	{
-		$data = [
-			"quantity" => $quantity
-		];
+        $data = [
+            "quantity" => $quantity
+        ];
 		return $this->client->Post("/trainer/" . $gridId . "/" . $unitType, $data);
-	}	
-	
-	// Construct building
+	}
+
+	// convert minerals to energy
+    public function Minerals2Energy($mineralType, $quantity, $gridId)
+    {
+        $data = [
+            "quantity" => $quantity
+        ];
+        return $this->client->Post("/producer/" . $gridId . "/" . $mineralType, $data);
+    }
+
+
+    // Construct building
 	public function Construct($buildingType, $gridId)
 	{
 		return $this->client->Post("/construction/" . $gridId . "/" . $buildingType, false);
@@ -119,9 +129,8 @@ class GalaxyAPI
 	public function CompleteMission($id)
 	{
 		return $this->client->Post("/mission/" . $id, false);
-	}	
-	
-	
+	}
+
 	
 	
 	public function log($text)

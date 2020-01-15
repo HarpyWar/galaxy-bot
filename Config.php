@@ -7,14 +7,14 @@ class Config
 
 	// upgrade can be set to false or to level from 1 to 10
 	public static $UpgradeCenter = 5;
-	public static $UpgradeMine = 6; // 10
+	public static $UpgradeMine = 10; // 10
 	public static $UpgradeEnergy = 5;
-	public static $UpgradeCosmoport = false;
-	public static $UpgradeSupply = false; // 5 not required very high if trade every minute and it close to the main planet
-	public static $UpgradeRadar = false;
+	public static $UpgradeCosmoport = 3;
+	public static $UpgradeSupply = 3; // 5 not required very high if trade every minute and it close to the main planet
+	public static $UpgradeRadar = 2;
 	public static $UpgradeTrade = 4;
 	public static $UpgradeTrainer = 3;
-	public static $UpgradeTurret = false;
+	public static $UpgradeTurret = 2;
 	public static $UpgradeShield = 3;
 
 
@@ -31,9 +31,12 @@ class Config
 	public static $UpgradeShield = true;
 	*/
 
+	// min user energy we should convert minerals to energy on full capacity planets
+    public static $MinEnergyToConvert = 5000;
+
 	// train 1 units per a time
-	public static $HerculesTrainCount = 1;
-    public static $LokiTrainCount = 1;
+	public static $HerculesTrainCount = 2;
+    public static $LokiTrainCount = 10;
 
     // create loki on the main planet for this count of expeditions
     // (x3 should be good, x2 on orbital station and x1 training)

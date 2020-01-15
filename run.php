@@ -33,8 +33,19 @@ while (true)
 		{
 			$api->ChangePlanet($tp->id);
 			$p = $api->GetPlanet();
-			
-			
+
+
+            // If planet minerals are full, and not enough energy - sell half of minerals from the planet supply
+            if ($p->used_capacity == $p->capacity && $user->energy < Config::$MinEnergyToConvert)
+            {
+                if ($energy_id = GalaxyHelper::FindBuilding(BuildingType::Energy, $p->grids))
+                {
+                    $api->log("convert " . $p->capacity . " minerals to energy");
+                    $api->Minerals2Energy($p->resource_id, $p->capacity, $energy_id);
+                }
+            }
+
+
 			// create hercules only if cache is ready
             // and the planet is not orbital
             // and radar exists
@@ -181,17 +192,27 @@ while (true)
                             if ($g->building_id == BuildingType::Trainer)
                                 $factory_count++;
                         }
-                        $train_quantity = ceil($herc_diff / $factory_count);
+
                         // divide builds between available factories
                         foreach ($p->grids as $g)
                         {
+                            if ($herc_diff <= 0)
+                                break;
+                            
                             if ($g->building_id == BuildingType::Trainer && !$g->training)
                             {
+                                $train_quantity = abs(ceil($herc_diff / $factory_count));
+                                if ($train_quantity == 0)
+                                    $train_quantity = $herc_diff;
+
                                 $quantity = $train_quantity < Config::$HerculesTrainCount
                                     ? $train_quantity
                                     : Config::$HerculesTrainCount;
                                 $api->log("train " . $quantity . " hercules (required " . $herc_diff . ")");
-                                //$api->Train(UnitType::Hercules, $quantity, $g->id);
+                                $api->Train(UnitType::Hercules, $quantity, $g->id);
+
+                                // subtract
+                                $herc_diff -= $quantity;
                             }
                         }
                     }
@@ -200,8 +221,8 @@ while (true)
                 $planet_cache->set($p->id, "herc_count", $herc_count);
                 $planet_cache->set($p->id, "herc_opt", $herc_opt);
             }
-			
-			
+
+
 
             // Build required buildings on the planet
             foreach (Config::$RequiredBuildings as $btype => $bcount)
