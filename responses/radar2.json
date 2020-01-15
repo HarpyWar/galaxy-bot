@@ -1,0 +1,1820 @@
+{
+    "incoming_movements": [{
+            "id": 1910217,
+            "type": 3,
+            "remaining": 13887,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1910865,
+            "type": 3,
+            "remaining": 14353,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1911293,
+            "type": 3,
+            "remaining": 14711,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1911798,
+            "type": 3,
+            "remaining": 15076,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1912147,
+            "type": 3,
+            "remaining": 15371,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1912602,
+            "type": 3,
+            "remaining": 15736,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1913023,
+            "type": 3,
+            "remaining": 16024,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1913410,
+            "type": 3,
+            "remaining": 16322,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1913670,
+            "type": 3,
+            "remaining": 16574,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1914059,
+            "type": 3,
+            "remaining": 16863,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1914376,
+            "type": 3,
+            "remaining": 17137,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1914811,
+            "type": 3,
+            "remaining": 17529,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1920343,
+            "type": 3,
+            "remaining": 22902,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1920721,
+            "type": 3,
+            "remaining": 23351,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1921035,
+            "type": 3,
+            "remaining": 23803,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1921248,
+            "type": 3,
+            "remaining": 24161,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1921524,
+            "type": 3,
+            "remaining": 24553,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1922003,
+            "type": 3,
+            "remaining": 24929,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1922360,
+            "type": 3,
+            "remaining": 25342,
+            "start": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "end": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "resources": [],
+            "units": []
+        }
+    ],
+    "outgoing_movements": [{
+            "id": 1899728,
+            "type": 5,
+            "remaining": 2568,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 6000
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 60
+                }
+            ]
+        }, {
+            "id": 1900173,
+            "type": 5,
+            "remaining": 3082,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 500
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 5
+                }
+            ]
+        }, {
+            "id": 1900445,
+            "type": 5,
+            "remaining": 3397,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1900656,
+            "type": 5,
+            "remaining": 3676,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1900951,
+            "type": 5,
+            "remaining": 3991,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1901170,
+            "type": 5,
+            "remaining": 4262,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1901441,
+            "type": 5,
+            "remaining": 4592,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1901661,
+            "type": 5,
+            "remaining": 4868,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1902043,
+            "type": 5,
+            "remaining": 5229,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1902302,
+            "type": 5,
+            "remaining": 5526,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1902502,
+            "type": 5,
+            "remaining": 5782,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1904552,
+            "type": 5,
+            "remaining": 8480,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 2300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 23
+                }
+            ]
+        }, {
+            "id": 1904921,
+            "type": 5,
+            "remaining": 8860,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1905234,
+            "type": 5,
+            "remaining": 9204,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1905512,
+            "type": 5,
+            "remaining": 9535,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1905941,
+            "type": 5,
+            "remaining": 10034,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 400
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 4
+                }
+            ]
+        }, {
+            "id": 1906506,
+            "type": 5,
+            "remaining": 10394,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1906902,
+            "type": 5,
+            "remaining": 10723,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1907211,
+            "type": 5,
+            "remaining": 11026,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1907499,
+            "type": 5,
+            "remaining": 11314,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1907789,
+            "type": 5,
+            "remaining": 11653,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1908147,
+            "type": 5,
+            "remaining": 12042,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1908472,
+            "type": 5,
+            "remaining": 12410,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1908906,
+            "type": 5,
+            "remaining": 12814,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 400
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 4
+                }
+            ]
+        }, {
+            "id": 1909200,
+            "type": 5,
+            "remaining": 13145,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1909728,
+            "type": 5,
+            "remaining": 13523,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 400
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 4
+                }
+            ]
+        }, {
+            "id": 1910272,
+            "type": 5,
+            "remaining": 13924,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1910781,
+            "type": 5,
+            "remaining": 14279,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1911190,
+            "type": 5,
+            "remaining": 14623,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1911520,
+            "type": 5,
+            "remaining": 14870,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1911893,
+            "type": 5,
+            "remaining": 15128,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1912222,
+            "type": 5,
+            "remaining": 15417,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1912808,
+            "type": 5,
+            "remaining": 15859,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 400
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 4
+                }
+            ]
+        }, {
+            "id": 1913784,
+            "type": 5,
+            "remaining": 16647,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 700
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 7
+                }
+            ]
+        }, {
+            "id": 1914043,
+            "type": 5,
+            "remaining": 16850,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 100
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 1
+                }
+            ]
+        }, {
+            "id": 1914269,
+            "type": 5,
+            "remaining": 17047,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 2
+                }
+            ]
+        }, {
+            "id": 1914644,
+            "type": 5,
+            "remaining": 17370,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1915034,
+            "type": 5,
+            "remaining": 17734,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1915437,
+            "type": 5,
+            "remaining": 18094,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 300
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 3
+                }
+            ]
+        }, {
+            "id": 1916848,
+            "type": 5,
+            "remaining": 19396,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 1100
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 11
+                }
+            ]
+        }, {
+            "id": 1918546,
+            "type": 5,
+            "remaining": 20873,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 1200
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 12
+                }
+            ]
+        }, {
+            "id": 1919282,
+            "type": 5,
+            "remaining": 21573,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 600
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 6
+                }
+            ]
+        }, {
+            "id": 1920198,
+            "type": 5,
+            "remaining": 22739,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 900
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 9
+                }
+            ]
+        }, {
+            "id": 1921420,
+            "type": 5,
+            "remaining": 24421,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [{
+                    "id": 4,
+                    "name": "\u0425\u0440\u043e\u043c\u0438\u0443\u043c",
+                    "description": "\u041c\u043e\u0436\u043d\u043e \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0442\u044c \u043d\u0430 \u0430\u0441\u0442\u0435\u0440\u043e\u0438\u0434\u0430\u0445.",
+                    "quantity": 1400
+                }
+            ],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 14
+                }
+            ]
+        }, {
+            "id": 1925737,
+            "type": 3,
+            "remaining": 63466,
+            "start": {
+                "id": 99715,
+                "resource_id": 4,
+                "display_name": "gr09",
+                "x": 78556,
+                "y": 30852
+            },
+            "end": {
+                "id": 96551,
+                "resource_id": 1,
+                "display_name": "g01",
+                "x": 48575,
+                "y": 88828
+            },
+            "resources": [],
+            "units": [{
+                    "id": 1,
+                    "name": "\u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb H1",
+                    "description": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u044b\u0439 \u043a\u043e\u0440\u0430\u0431\u043b\u044c H1 \u00ab\u0413\u0435\u0440\u043a\u0443\u043b\u0435\u0441\u00bb. \u041f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u043c\u0438\u043d\u0435\u0440\u0430\u043b\u043e\u0432.",
+                    "quantity": 1
+                }
+            ]
+        }
+    ]
+}

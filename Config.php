@@ -1,5 +1,4 @@
 <?php
-
 require_once("Types.php");
 
 class Config
@@ -7,16 +6,16 @@ class Config
 	public static $Trade = true;
 
 	// upgrade can be set to false or to level from 1 to 10
-	public static $UpgradeCenter = false;
-	public static $UpgradeMine = 10;
-	public static $UpgradeEnergy = false;
+	public static $UpgradeCenter = 5;
+	public static $UpgradeMine = 6; // 10
+	public static $UpgradeEnergy = 5;
 	public static $UpgradeCosmoport = false;
-	public static $UpgradeSupply = 5; // not required very high if trade every minute and it close to the main planet
+	public static $UpgradeSupply = false; // 5 not required very high if trade every minute and it close to the main planet
 	public static $UpgradeRadar = false;
-	public static $UpgradeTrade = false;
-	public static $UpgradeTrainer = false;
+	public static $UpgradeTrade = 4;
+	public static $UpgradeTrainer = 3;
 	public static $UpgradeTurret = false;
-	public static $UpgradeShield = false;
+	public static $UpgradeShield = 3;
 
 
 	/*
@@ -31,6 +30,9 @@ class Config
 	public static $UpgradeTurret = true;
 	public static $UpgradeShield = true;
 	*/
+
+	// train 5 units f
+	public static $HerculesTrainCount = 5;
 
     // create loki on the main planet for this count of expeditions
     // (x3 should be good, x2 on orbital station and x1 training)

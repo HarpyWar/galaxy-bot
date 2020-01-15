@@ -23,17 +23,20 @@ class GalaxyAPI
 		return $this->client->Put("/user/current/" . $planetId);
 	}
 
+	/*
+	 * Get data of the selected planet
+	 */
 	public function GetPlanet()
 	{
 		$response = $this->client->Get("/planet");
-		$this->planet_name = $response->display_name;
+        $this->planet_name = $response->display_name;
 		return $response;
 	}
 	
 	public function GetMyPlanets()
 	{
 		return $this->client->Get("/myplanets");
-	}	
+	}
 	
 	
 	public function GetExpeditions()
@@ -45,6 +48,10 @@ class GalaxyAPI
 		return $this->client->Get("/mission");
 	}
 	
+	public function GetRadarMovements($gridId)
+	{
+		return $this->client->Get("/scout/" . $gridId);
+	}
 	
 	
 	
@@ -85,6 +92,16 @@ class GalaxyAPI
 			]
 		];
 		return $this->client->Post("/movement/patrol/" . $gridId, $data);
+	}	
+	
+	public function SupportUnit($unitType, $quantity, $planetId)
+	{
+        $data = [
+            "quantity" => [
+                $unitType => $quantity
+            ]
+        ];
+		return $this->client->Post("/movement/support/" . $planetId, $data);
 	}	
 	
 	

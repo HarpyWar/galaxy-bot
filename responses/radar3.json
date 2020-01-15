@@ -1,0 +1,45 @@
+{
+    "incoming_movements": [{
+            "id": 1888631,
+            "type": 3,
+            "remaining": 1744,
+            "start": {
+                "id": 99569,
+                "resource_id": 1,
+                "display_name": "Star 7",
+                "x": 88836,
+                "y": 59550
+            },
+            "end": {
+                "id": 87723,
+                "resource_id": 1,
+                "display_name": "Trusrios",
+                "x": 92041,
+                "y": 56765
+            },
+            "resources": [],
+            "units": []
+        }, {
+            "id": 1890135,
+            "type": 3,
+            "remaining": 1396,
+            "start": {
+                "id": 99569,
+                "resource_id": 1,
+                "display_name": "Star 7",
+                "x": 88836,
+                "y": 59550
+            },
+            "end": {
+                "id": 87723,
+                "resource_id": 1,
+                "display_name": "Trusrios",
+                "x": 92041,
+                "y": 56765
+            },
+            "resources": [],
+            "units": []
+        }
+    ],
+    "outgoing_movements": []
+}
