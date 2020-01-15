@@ -69,10 +69,10 @@ class Auth
 		$galaxy_of_drones_online_session = $cookies['galaxy_of_drones_online_session']['value'];
 		
 
-		$header_str = "X-CSRF-TOKEN: {$csrf_token}\r\n" . 
-					  #"X-XSRF-TOKEN: {$xsrf_token}\r\n" . 
-					  "Cookie: laravel_token={$laravel_token};";
-					  #"Cookie: PHPSESSID_production={$session_id}; laravel_token={$laravel_token}; galaxy_of_drones_online_session={$galaxy_of_drones_online_session}; XSRF-TOKEN={$xsrf_token}\r\n";
+		$header_str = "X-CSRF-TOKEN: {$csrf_token}\r\n" . // required
+					  "X-XSRF-TOKEN: {$xsrf_token}\r\n" . // not required?
+					  #"Cookie: laravel_token={$laravel_token};"; // required
+					  "Cookie: PHPSESSID_production={$session_id}; laravel_token={$laravel_token}; galaxy_of_drones_online_session={$galaxy_of_drones_online_session}; XSRF-TOKEN={$xsrf_token}\r\n"; // not required?
 		return $header_str;
 	}
 	

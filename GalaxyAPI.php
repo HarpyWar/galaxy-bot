@@ -37,7 +37,10 @@ class GalaxyAPI
 	{
 		return $this->client->Get("/myplanets");
 	}
-	
+    public function GetUser()
+    {
+        return $this->client->Get("/user");
+    }
 	
 	public function GetExpeditions()
 	{
@@ -79,6 +82,10 @@ class GalaxyAPI
 		return $this->client->Post("/construction/" . $gridId . "/" . $buildingType, false);
 	}	
 	
+	public function UpgradeInfo($gridId)
+	{
+		return $this->client->Get("/upgrade/" . $gridId);
+	}
 	public function Upgrade($gridId)
 	{
 		return $this->client->Post("/upgrade/" . $gridId, false);

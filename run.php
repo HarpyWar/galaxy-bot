@@ -27,6 +27,7 @@ while (true)
 
 		// get all planets
         $myplanets = $api->GetMyplanets();
+        $user = $api->GetUser();
 
 		foreach ($myplanets->planets as $tp)
 		{
@@ -136,6 +137,10 @@ while (true)
                     //    find from where we can transfer some hercules
                     foreach ($planet_cache->planets() as $cp)
                     {
+                        // planey may not be cached fully yet, so ignore such items
+                        if (!isset($cp["herc_count"]))
+                            continue;
+
                         $_herc_diff = $cp["herc_count"] - $cp["herc_opt"]; // ! important order
                         // ignore planets where not enough hercules
                         if ($_herc_diff < 0)
@@ -282,7 +287,9 @@ while (true)
                         if ($g->building_id == BuildingType::Trainer)
                             $factory_count++;
                     }
-                    $train_quantity = ceil($loki_diff / $factory_count);
+                    #$train_quantity = ceil($loki_diff / $factory_count);
+                    // FIXME: train several units because energy is low usually
+                    $train_quantity = Config::$LokiTrainCount;
                     // divide builds between available factories
                     foreach ($p->grids as $g)
                     {
@@ -335,9 +342,15 @@ while (true)
 					continue;
 				if ((!Config::$UpgradeShield || $g->level > Config::$UpgradeShield) && $g->building_id == BuildingType::Shield)
 					continue;
-		
-				$api->log("upgrade " . $g->building_id);
-				$api->Upgrade($g->id);
+
+				// check for enough energy
+				$upg_info = $api->UpgradeInfo($g->id);
+				if ($user->energy >= $upg_info->upgrade->construction_cost)
+                {
+                    $api->log("upgrade " . $g->building_id);
+                    $api->Upgrade($g->id);
+                    $user->energy -= $upg_info->upgrade->construction_cost;
+                }
 			}
 
 			if (Config::$Trade)
@@ -402,6 +415,8 @@ while (true)
         $planet_cache->setCached();
 		foreach ($planet_cache->planets() as $c)
         {
+            if (!isset($c["herc_count"]))
+                continue;
             $api->log($c["display_name"] . " Hercules: " . $c["herc_count"] . " / " . $c["herc_opt"] . " / " . ($c["herc_count"] - $c["herc_opt"]));
         }
 

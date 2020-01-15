@@ -31,8 +31,9 @@ class Config
 	public static $UpgradeShield = true;
 	*/
 
-	// train 5 units f
-	public static $HerculesTrainCount = 5;
+	// train 1 units per a time
+	public static $HerculesTrainCount = 1;
+    public static $LokiTrainCount = 1;
 
     // create loki on the main planet for this count of expeditions
     // (x3 should be good, x2 on orbital station and x1 training)
