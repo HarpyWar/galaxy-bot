@@ -12,7 +12,7 @@ class Config
 	public static $UpgradeCosmoport = 3;
 	public static $UpgradeSupply = 3; // 5 not required very high if trade every minute and it close to the main planet
 	public static $UpgradeRadar = 2;
-	public static $UpgradeTrade = 4;
+	public static $UpgradeTrade = 10;
 	public static $UpgradeTrainer = 3;
 	public static $UpgradeTurret = 2;
 	public static $UpgradeShield = 3;

@@ -198,7 +198,7 @@ while (true)
                         {
                             if ($herc_diff <= 0)
                                 break;
-                            
+
                             if ($g->building_id == BuildingType::Trainer && !$g->training)
                             {
                                 $train_quantity = abs(ceil($herc_diff / $factory_count));
@@ -385,6 +385,19 @@ while (true)
 						break;
 					}
 				}
+				// for orbital station also count uniys from there
+				if ($p->is_capital)
+                {
+                    foreach ($myplanets->planets as $_p)
+                    {
+                        if ($p->id == $_p->id)
+                        {
+                            // count loki on the planet (ready and building
+                            $hercules_quantity += $_p->ships_count->{UnitType::Hercules};
+                            break;
+                        }
+                    }
+                }
 				// trade
 				foreach ($p->resources as $r)
 				{
@@ -411,19 +424,20 @@ while (true)
 				}
 			}
 			
-			// send loki
+			// send loki and valkyries to orbital station
 			foreach ($p->units as $u)
 			{
-				if ($u->id == UnitType::Loki && $u->quantity > 0)
-				{
-					// find trade center
-					if ($tc_id = GalaxyHelper::FindBuilding(BuildingType::Trade, $p->grids))
-					{
-						$api->log("send loki " . $u->quantity);
-						$api->SendUnit($u->id, $u->quantity, $tc_id);
-						break;
-					}
-				}
+				if ($u->id != UnitType::Loki) //  && $u->id != UnitType::Valkyrie
+				    continue;
+				if ($u->quantity == 0)
+				    continue;
+                // find trade center
+                if ($tc_id = GalaxyHelper::FindBuilding(BuildingType::Trade, $p->grids))
+                {
+                    $api->log("send " . $u->id . " (" . $u->quantity . ")");
+                    $api->SendUnit($u->id, $u->quantity, $tc_id);
+                    break;
+                }
 			}
 
             $planet_cache->set($p->id, "id", $p->id);
