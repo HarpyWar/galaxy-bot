@@ -38,6 +38,10 @@ class Config
 	public static $HerculesTrainCount = 2;
     public static $LokiTrainCount = 10;
 
+    // Optimal quantity of hercules for orbital station
+    // (actually any value should be ok, 100 is normal for any level, it may be good less if planets are low level)
+    public static $OrbitalHerculesOptimalCount = 10;
+
     // create loki on the main planet for this count of expeditions
     // (x3 should be good, x2 on orbital station and x1 training)
     public static $ExpeditionsForLoki = 3;
@@ -65,8 +69,7 @@ class Config
         BuildingType::Shield => 1       // max 1
     ];
 
-	
-	// account => token
+    // account => token
 	public static $Accounts = [
 		[
 			"address" => "Mxfda2f0143fbc896c6dac4fa50714661f93187b44",

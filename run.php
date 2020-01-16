@@ -5,6 +5,7 @@ require_once("Types.php");
 require_once("GalaxyAPI.php");
 require_once("GalaxyClient.php");
 require_once("GalaxyHelper.php");
+require_once("PlanetCache.php");
 
 // cache ids etc
 $planet_cache = new PlanetCache();
@@ -32,8 +33,7 @@ while (true)
 		foreach ($myplanets->planets as $tp)
 		{
 			$api->ChangePlanet($tp->id);
-			$p = $api->GetPlanet();
-
+            $p = $api->GetPlanet();
 
             // If planet minerals are full, and not enough energy - sell half of minerals from the planet supply
             if ($p->used_capacity == $p->capacity && $user->energy < Config::$MinEnergyToConvert)
@@ -49,9 +49,7 @@ while (true)
 			// create hercules only if cache is ready
             // and the planet is not orbital
             // and radar exists
-			if ($planet_cache->isCached() &&
-                !$p->is_capital &&
-                ($radar_id = GalaxyHelper::FindBuilding(BuildingType::Radar, $p->grids)))
+			if (($radar_id = GalaxyHelper::FindBuilding(BuildingType::Radar, $p->grids)))
             {
                 $herc_count = 0;
 
@@ -137,82 +135,80 @@ while (true)
 
                 // optimal hercules quantity
                 $herc_opt = GalaxyHelper::CalcOptimalHerculesCount($p->mining_rate, $p->x, $p->y, $orbital_x, $orbital_y);
+                if ($p->is_capital)
+                    $herc_opt = Config::$OrbitalHerculesOptimalCount;
                 $herc_diff = $herc_count - $herc_opt; // ! important order
 
-                // if we need more hercules
-                if ($herc_diff < 0)
+                // if all planets are cached
+                if ($planet_cache->isCached())
                 {
-                    $supported = false;
-                    // ####################################################
-                    // a) iterate through other planets in the cache and
-                    //    find from where we can transfer some hercules
-                    foreach ($planet_cache->planets() as $cp)
+                    // if we need more hercules
+                    if ($herc_diff < 0)
                     {
-                        // planey may not be cached fully yet, so ignore such items
-                        if (!isset($cp["herc_count"]))
-                            continue;
-
-                        $_herc_diff = $cp["herc_count"] - $cp["herc_opt"]; // ! important order
-                        // ignore planets where not enough hercules
-                        if ($_herc_diff < 0)
-                            continue;
-
-                        // how much units we can support
-                        #$support_quantity = $_herc_diff > abs($herc_diff)
-                        #    ? abs($herc_diff)
-                        #    : $_herc_diff;
-                        // FIXME: support with a small quantity, because all units can not be on the planet now
-                        $support_quantity = Config::$HerculesTrainCount;
-
-                        $api->ChangePlanet($cp["id"]); // switch on the planet where we have reduntant units
-                        // send units
-                        $api->log($cp["display_name"] . " support " . $support_quantity . " hercules to " . $p->display_name . " (required " . $herc_diff . ")");
-                        $api->SupportUnit(UnitType::Hercules, $support_quantity, $p->id);
-                        $api->ChangePlanet($p->id); // switch back
-
-                        // update cache
-                        $planet_cache->set($cp["id"], "herc_count", $cp["herc_count"] - $support_quantity);
-                        $supported = true;
-
-                        $herc_count += $support_quantity;
-                        $herc_diff += $support_quantity;
-                        // do not find other planets if the goal reached
-                        if ($herc_diff >= 0)
-                            break;
-                    }
-
-                    // ####################################################
-                    // b) build new hercules if not enough on other planets
-                    if (!$supported)
-                    {
-                        // get count of factories on the planet
-                        $factory_count = 0;
-                        foreach ($p->grids as $g)
+                        $supported = false;
+                        // ####################################################
+                        // a) iterate through other planets in the cache and
+                        //    find from where we can transfer some hercules
+                        foreach ($planet_cache->planets() as $cp)
                         {
-                            if ($g->building_id == BuildingType::Trainer)
-                                $factory_count++;
+                            $_herc_diff = $cp["herc_count"] - $cp["herc_opt"]; // ! important order
+                            // ignore planets where not enough hercules
+                            if ($_herc_diff < 0)
+                                continue;
+
+                            // how much units we can support
+                            #$support_quantity = $_herc_diff > abs($herc_diff)
+                            #    ? abs($herc_diff)
+                            #    : $_herc_diff;
+                            // FIXME: support with a small quantity, because all units can not be on the planet now
+                            $support_quantity = Config::$HerculesTrainCount;
+
+                            $api->ChangePlanet($cp["id"]); // switch on the planet where we have reduntant units
+                            // send units
+                            $api->log($cp["display_name"] . " support " . $support_quantity . " hercules to " . $p->display_name . " (required " . $herc_diff . ")");
+                            $api->SupportUnit(UnitType::Hercules, $support_quantity, $p->id);
+                            $api->ChangePlanet($p->id); // switch back
+
+                            // update cache
+                            $planet_cache->set($cp["id"], "herc_count", $cp["herc_count"] - $support_quantity);
+                            $supported = true;
+
+                            $herc_count += $support_quantity;
+                            $herc_diff += $support_quantity;
+                            // do not find other planets if the goal reached
+                            if ($herc_diff >= 0)
+                                break;
                         }
 
-                        // divide builds between available factories
-                        foreach ($p->grids as $g)
-                        {
-                            if ($herc_diff <= 0)
-                                break;
+                        // ####################################################
+                        // b) build new hercules if not enough on other planets
+                        if (!$supported) {
+                            // get count of factories on the planet
+                            $factory_count = 0;
+                            foreach ($p->grids as $g) {
+                                if ($g->building_id == BuildingType::Trainer)
+                                    $factory_count++;
+                            }
 
-                            if ($g->building_id == BuildingType::Trainer && !$g->training)
-                            {
-                                $train_quantity = abs(ceil($herc_diff / $factory_count));
-                                if ($train_quantity == 0)
-                                    $train_quantity = $herc_diff;
+                            // divide builds between available factories
+                            foreach ($p->grids as $g) {
+                                if ($herc_diff >= 0)
+                                    break;
 
-                                $quantity = $train_quantity < Config::$HerculesTrainCount
-                                    ? $train_quantity
-                                    : Config::$HerculesTrainCount;
-                                $api->log("train " . $quantity . " hercules (required " . $herc_diff . ")");
-                                $api->Train(UnitType::Hercules, $quantity, $g->id);
+                                if ($g->building_id == BuildingType::Trainer && !$g->training) {
+                                    $train_quantity = abs(ceil($herc_diff / $factory_count));
+                                    if ($train_quantity == 0)
+                                        $train_quantity = $herc_diff;
 
-                                // subtract
-                                $herc_diff -= $quantity;
+                                    $quantity = $train_quantity < Config::$HerculesTrainCount
+                                        ? $train_quantity
+                                        : Config::$HerculesTrainCount;
+                                    $api->log("train " . $quantity . " hercules (required " . $herc_diff . ")");
+                                    $api->Train(UnitType::Hercules, $quantity, $g->id);
+
+                                    // subtract
+                                    $herc_diff += $quantity;
+                                }
                             }
                         }
                     }
@@ -515,48 +511,15 @@ while (true)
 }
 
 
-class PlanetCache
+class Planet
 {
-    protected $address = false;
-    protected $cached = [];
-    protected $values = array();
-
-    public function setAccount($address)
+    public function __construct($planet, $myplanets, $user)
     {
-        $this->address = $address;
+
     }
 
-    // return true if all planets on the account are cached
-    public function isCached()
+    public function Handle()
     {
-        return isset($this->cached[$this->address]);
-    }
-    // set flag cached
-    public function setCached()
-    {
-        $this->cached[$this->address] = true;
-    }
 
-    // return all planets cache from the account
-    public function planets()
-    {
-        return $this->values[$this->address];
     }
-
-    // set cache key=val for the planet
-    public function set($pid, $key, $val)
-    {
-        if (!isset($this->values[$this->address][$pid]))
-            $this->values[$this->address][$pid] = [];
-        $this->values[$this->address][$pid][$key] = $val;
-    }
-
-    // get cached key for the planet
-    public function get($pid, $key)
-    {
-        if (!isset($this->values[$this->address][$pid]) || !isset($this->values[$this->address][$pid][$key]))
-            return false;
-        return $this->values[$this->address][$pid][$key];
-    }
-
 }
