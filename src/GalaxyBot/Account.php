@@ -20,6 +20,7 @@ class Account
      * @var PlanetCache
      */
     public $cache;
+
     /**
      * @var string Account name
      */
@@ -33,11 +34,11 @@ class Account
     public $expeditions;
     public $missions;
 
-    public function __construct($api, $address)
+    public function __construct($api, $cache, $address)
     {
         $this->api = $api;
         $this->address = $address;
-        $this->cache = new PlanetCache($this);
+        $this->cache = $cache;
 
         $this->loadData();
     }

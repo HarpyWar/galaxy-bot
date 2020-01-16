@@ -17,7 +17,8 @@ class TrainHerculesHandler extends PlanetHandler
 {
     public function Execute()
     {
-        parent::Execute();
+        if (!parent::Execute())
+            return;
 
         // shorten names
         $p = $this->planet->p;
@@ -119,6 +120,7 @@ class TrainHerculesHandler extends PlanetHandler
         $herc_opt = GalaxyHelper::CalcOptimalHerculesCount($p->mining_rate, $p->x, $p->y, $orbital_x, $orbital_y);
         if ($p->is_capital)
             $herc_opt = Config::$OrbitalHerculesOptimalCount;
+        // difference to support or train
         $herc_diff = $herc_count - $herc_opt; // ! important order
 
         // if all planets are cached
@@ -133,6 +135,7 @@ class TrainHerculesHandler extends PlanetHandler
                 //    find from where we can transfer some hercules
                 foreach ($cache->planets() as $cp)
                 {
+                    // difference to support or train (on cached planet)
                     $_herc_diff = $cp["herc_count"] - $cp["herc_opt"]; // ! important order
                     // ignore planets where not enough hercules
                     if ($_herc_diff < 0)
@@ -142,8 +145,21 @@ class TrainHerculesHandler extends PlanetHandler
                     #$support_quantity = $_herc_diff > abs($herc_diff)
                     #    ? abs($herc_diff)
                     #    : $_herc_diff;
-                    // FIXME: support with a small quantity, because all units can not be on the planet now
-                    $support_quantity = Config::$HerculesTrainCount;
+                    $support_quantity = 0;
+
+                    // get hercules on the planet which can be sent to support
+                    foreach ($myplanets->planets as $_p)
+                    {
+                        if ($cp["id"] == $_p->id)
+                        {
+                            $support_quantity == $_p->ships_count->{UnitType::Hercules};
+                            break;
+                        }
+                    }
+                    if ($support_quantity == 0)
+                        continue;
+                    if ($support_quantity > abs($herc_diff))
+                        $support_quantity = abs($herc_diff);
 
                     $api->ChangePlanet($cp["id"]); // switch on the planet where we have reduntant units
                     // send units

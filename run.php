@@ -18,8 +18,14 @@ class GalaxyApp
      */
     private $api_list = [];
 
+    /**
+     * @var PlanetCache
+     */
+    private $cache;
+
     public function Run()
     {
+        $this->cache = new PlanetCache($this);
         while (true)
         {
             $this->iterateAccounts();
@@ -30,6 +36,7 @@ class GalaxyApp
     {
         foreach (Config::$Accounts as $i => $a)
         {
+
             // cache api sessions
             if ( !isset($this->api_list[$i]) )
             {
@@ -40,7 +47,9 @@ class GalaxyApp
             $api->log("[" . $a["address"] . "]");
 
             // account scope
-            $account = new Account($api, $a["address"]);
+            $account = new Account($api, $this->cache, $a["address"]);
+            $this->cache->setAccount($account);
+
             // itarate account planets
             $this->handlePlanets($account);
         }
@@ -67,8 +76,8 @@ class GalaxyApp
             $planet->Handle($p);
         }
 
-        $a->cache->setCached();
-        foreach ($a->cache->planets() as $c)
+        $this->cache->setCached();
+        foreach ($this->cache->planets() as $c)
         {
             if (!isset($c["herc_count"]))
                 continue;

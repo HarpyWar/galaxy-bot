@@ -13,9 +13,12 @@ class PlanetCache
     protected $values = [];
 
     public $radar = [];
-    private $dynamic = [];
 
-    public function __construct($account)
+    public function __construct()
+    {
+    }
+
+    public function setAccount($account)
     {
         $this->a = $account;
     }
@@ -55,17 +58,5 @@ class PlanetCache
         return $this->values[$this->a->address][$pid][$key];
     }
 
-
-    public function __set($name, $value)
-    {
-        $this->dynamic[$name] = $value;
-    }
-
-    public function __get($name)
-    {
-        if (array_key_exists($name, $this->dynamic))
-            return $this->dynamic[$name];
-        return false;
-    }
 
 }

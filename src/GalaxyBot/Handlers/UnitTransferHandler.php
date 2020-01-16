@@ -14,7 +14,8 @@ class UnitTransferHandler extends PlanetHandler
 {
     public function Execute()
     {
-        parent::Execute();
+        if (!parent::Execute())
+            return;
 
         // shorten names
         $p = $this->planet->p;
