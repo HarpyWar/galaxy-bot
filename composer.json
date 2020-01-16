@@ -1,0 +1,10 @@
+{
+    "name": "harpywar/galaxybot",
+    "authors": [
+        {
+            "name": "HarpyWar",
+            "email": "harpywar@gmail.com"
+        }
+    ],
+    "require": {}
+}

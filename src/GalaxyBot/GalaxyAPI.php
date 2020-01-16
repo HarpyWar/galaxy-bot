@@ -1,5 +1,8 @@
 <?php
 
+namespace GalaxyBot;
+
+use GalaxyBot\Config;
 
 class GalaxyAPI
 {
@@ -41,7 +44,11 @@ class GalaxyAPI
     {
         return $this->client->Get("/user");
     }
-	
+    public function GetCapital()
+    {
+        return $this->client->Get("/user/capital");
+    }
+
 	public function GetExpeditions()
 	{
 		return $this->client->Get("/expedition");

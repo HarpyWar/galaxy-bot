@@ -1,0 +1,44 @@
+{
+    "id": 1083,
+    "capital_id": 101920,
+    "capital_change_remaining": null,
+    "incoming_capital_movement_count": 81,
+    "planets": [{
+            "id": 85025,
+            "name": "Brosrios"
+        }, {
+            "id": 100837,
+            "name": "Crushium"
+        }, {
+            "id": 88159,
+            "name": "Fadrium"
+        }, {
+            "id": 98822,
+            "name": "Gruzia"
+        }, {
+            "id": 99449,
+            "name": "Hathio"
+        }, {
+            "id": 85345,
+            "name": "Masrios"
+        }, {
+            "id": 93342,
+            "name": "Planio"
+        }, {
+            "id": 85440,
+            "name": "Pluchios"
+        }, {
+            "id": 98299,
+            "name": "Rohium"
+        }, {
+            "id": 101920,
+            "name": "Star 9"
+        }, {
+            "id": 94585,
+            "name": "Troplium"
+        }, {
+            "id": 93459,
+            "name": "Zakrium"
+        }
+    ]
+}

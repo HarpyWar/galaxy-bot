@@ -1,5 +1,20 @@
 <?php
-require_once("Types.php");
+
+namespace GalaxyBot;
+
+use GalaxyBot\Types\BuildingType;
+
+foreach (glob("Types/*.php") as $filename)
+    include $filename;
+
+foreach (glob("Handlers/*.php") as $filename)
+    include $filename;
+
+require_once("GalaxyAPI.php");
+require_once("GalaxyClient.php");
+require_once("GalaxyHelper.php");
+require_once("PlanetCache.php");
+
 
 class Config
 {

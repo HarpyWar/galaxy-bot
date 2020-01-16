@@ -1,5 +1,7 @@
 <?php
 
+namespace GalaxyBot;
+use GalaxyBot\Config;
 
 class GalaxyHelper
 {
