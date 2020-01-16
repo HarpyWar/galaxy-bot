@@ -385,17 +385,14 @@ while (true)
 						break;
 					}
 				}
-				// for orbital station also count uniys from there
+				// for orbital station also count hercules from there
 				if ($p->is_capital)
                 {
-                    foreach ($myplanets->planets as $_p)
+                    $elist = $api->GetExpeditions();
+                    foreach ($elist->units as $u)
                     {
-                        if ($p->id == $_p->id)
-                        {
-                            // count loki on the planet (ready and building
-                            $hercules_quantity += $_p->ships_count->{UnitType::Hercules};
-                            break;
-                        }
+                        if ($u->id == UnitType::Hercules)
+                            $hercules_quantity += $u->quantity;
                     }
                 }
 				// trade
