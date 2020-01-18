@@ -18,7 +18,7 @@ class GalaxyAPI
 	
 	public function Login()
 	{
-		$this->client->Auth($this->account["address"], $this->account["password"]);
+		$this->client->Auth($this->account["address"], $this->account["password"], $this->account["ip"]);
 	}
 	
 	public function ChangePlanet($planetId)

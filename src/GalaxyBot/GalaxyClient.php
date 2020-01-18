@@ -12,16 +12,18 @@ class GalaxyClient
 	private $headers;
 	private $apiUrl = "https://galaxy.bipgame.io/api";
 	private $cookies = "";
-	
+	private $ip;
+
 	public function __construct($api)
 	{
 		$this->api = $api;
 		$this->auth = new Auth();
 	}
 	
-	public function Auth($login, $password)
+	public function Auth($login, $password, $ip)
 	{
-		$this->headers = $this->auth->Login($login, $password);
+        $this->ip = $ip;
+		$this->headers = $this->auth->Login($login, $password, $ip);
 	}
 	
 	private function getHeader()
@@ -74,6 +76,9 @@ X-Requested-With: XMLHttpRequest\r\n" .
 	
 	private function request($url, $options)
 	{
+	    // set source ip
+        if (Config::$UseProxy && $this->ip)
+            $options['socket']['bindto'] =  $this->ip .':0';
 		$options['http']['header'] = $this->getHeader();
 		$response = "";
 

@@ -8,19 +8,17 @@ class Auth
 
 	public function __construct()
 	{
-		
+
 	}
 	
-	public function Login($login, $password)
+	public function Login($login, $password, $ip)
 	{
-		echo "log in for $login ...\n";
+		echo "log in for $login [from " . $ip . "] ...\n";
 		$cookieFile = $this->cookieFile($login);
-
 
 		$ch = curl_init();
 		$url = 'https://bipgame.io/public/users/login?online&domain=galaxy.bipgame.io';
 		$options = array(CURLOPT_URL => $url,
-						CURLOPT_POST => 1,
 						CURLOPT_POSTFIELDS => "purse=".$login."&password=".$password,
 						CURLOPT_HTTPHEADER => array('Content-Type: application/x-www-form-urlencoded'),
 						CURLOPT_FOLLOWLOCATION => true,
@@ -28,6 +26,8 @@ class Auth
 						CURLOPT_COOKIEJAR => $cookieFile,
 						CURLOPT_RETURNTRANSFER => true
 						);
+        if (Config::$UseProxy && $ip)
+            curl_setopt($ch, CURLOPT_INTERFACE, $ip);
 
 		curl_setopt_array($ch, $options);
 		$result = curl_exec($ch);
@@ -50,6 +50,8 @@ class Auth
 						CURLOPT_COOKIEJAR => $cookieFile,
 						CURLOPT_RETURNTRANSFER => 1
 						);
+        if (Config::$UseProxy && $ip)
+            curl_setopt($ch, CURLOPT_INTERFACE, $ip);
 
 		curl_setopt_array($ch, $options);
 		$result =  curl_exec($ch);
