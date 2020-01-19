@@ -38,6 +38,8 @@ class TrainUnitsHandler extends PlanetHandler
             array_push($factories, $g->id);
         }
 
+        // how many units are built per iteration
+        $units_built = 0;
         for ($i = 0; $i < count(UnitType::$All); $i++)
         {
             $type = UnitType::$All[$i];
@@ -55,11 +57,15 @@ class TrainUnitsHandler extends PlanetHandler
 
                 $api->log("train unit " . $type);
                 $api->Train($type, $quantity, $grid_id);
+                $units_built++;
             }
 
             // cycle only if there are still factories available
-            if ($i == count(UnitType::$All) - 1 && count($factories) > 0)
+            if ($i == count(UnitType::$All) - 1 && count($factories) > 0 && $units_built > 0)
+            {
                 $i = 0;
+                $units_built = 0;
+            }
         }
     }
 }

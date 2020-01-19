@@ -118,13 +118,14 @@ class Config
     public static $RequiredBuildings = [
         BuildingType::Center => 1,      // max 1
         BuildingType::Energy => 1,      // max 1
-        BuildingType::Cosmoport => 2,
+        BuildingType::Cosmoport => 4,
         BuildingType::Supply => 2,
         BuildingType::Radar => 1,       // max 1
         BuildingType::Trade => 1,
         BuildingType::Trainer => 5,     // max 5
-        BuildingType::Turret => 5,
-        BuildingType::Shield => 1       // max 1
+        BuildingType::Shield => 1,       // max 1
+        // set last order and count of 6 (if not all fields busy then build
+        BuildingType::Turret => 7
     ];
 
 	/*
