@@ -59,7 +59,7 @@ class Auth
 
 		preg_match('/<meta\s+name=\"csrf-token\"\s+content=\"([^"]+)\"/', $result, $matches);
 		if (count($matches) != 2)
-			throw new Exception("Can't find csrf-token");
+			throw new \Exception("Can't find csrf-token");
 
 		$csrf_token = $matches[1];
 		#print_r($csrf_token);

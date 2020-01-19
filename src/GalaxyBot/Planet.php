@@ -31,8 +31,11 @@ class Planet
             new Handlers\UpgradeHandler($this, $account),
             new Handlers\TradeHandler($this, $account),
             new Handlers\UnitTransferHandler($this, $account),
+
+            // after all
             new Handlers\ExpeditionsHandler($this, $account),
             new Handlers\MissionsHandler($this, $account),
+            new Handlers\TrainUnitsHandler($this, $account),
             //...
         ];
     }
@@ -59,7 +62,7 @@ class Planet
             {
                 $h->Execute();
             }
-            catch(Exception $e)
+            catch(\Exception $e)
             {
                 $this->account->api->log($e->getMessage());
             }

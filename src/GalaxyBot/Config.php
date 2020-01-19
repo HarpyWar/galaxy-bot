@@ -5,12 +5,6 @@ namespace GalaxyBot;
 use GalaxyBot\Types\BuildingType;
 use GalaxyBot\Types\UnitType;
 
-foreach (glob("Types/*.php") as $filename)
-    include $filename;
-
-foreach (glob("Handlers/*.php") as $filename)
-    include $filename;
-
 require_once("GalaxyAPI.php");
 require_once("GalaxyClient.php");
 require_once("GalaxyHelper.php");
@@ -19,24 +13,15 @@ require_once("PlanetCache.php");
 
 class Config
 {
-    public static $UseProxy = true;
+    // set on start if $UseProxyFile exists
+    public static $UseProxy = false;
+    public static $UseProxyFile = "use_proxy";
+
+    // delay between accounts (seconds)
+    public static $Delay = 30;
 
 	public static $Trade = true;
 
-
-    // upgrade can be set to false or to level from 1 to 10
-    public static $UpgradeCenter = 5;
-    public static $UpgradeMine = 10; // 10
-    public static $UpgradeEnergy = 5;
-    public static $UpgradeCosmoport = 3;
-    public static $UpgradeSupply = 3; // 5 not required very high if trade every minute and it close to the main planet
-    public static $UpgradeRadar = 2;
-    public static $UpgradeTrade = 10;
-    public static $UpgradeTrainer = 3;
-    public static $UpgradeTurret = 2;
-    public static $UpgradeShield = 3;
-
-/*
     // upgrade can be set to false or to level from 1 to 10
     public static $UpgradeBuildings = [
         [
@@ -57,6 +42,13 @@ class Config
             ]
         ],
         [
+            "min_energy" => 50000,
+            "is_capital" => true, // only for capital
+            "data" => [
+                BuildingType::Trainer => 10,
+            ]
+        ],
+        [
             "min_energy" => 100000,
             "data" => [
                 BuildingType::Center => 10,
@@ -65,16 +57,29 @@ class Config
                 BuildingType::Cosmoport => 5,
                 BuildingType::Trade => 10,
                 BuildingType::Trainer => 10,
+                BuildingType::Turret => 5,
+                BuildingType::Shield => 5
+            ]
+        ],
+        [
+            "min_energy" => 500000,
+            "data" => [
+                BuildingType::Mine => 10,
+                BuildingType::Energy => 10,
+                BuildingType::Cosmoport => 7,
+                BuildingType::Supply => 6, // not required very high if trade every minute and it close to the main planet
+                BuildingType::Radar => 8,
+                BuildingType::Trade => 10,
+                BuildingType::Trainer => 8,
+                BuildingType::Turret => 7,
+                BuildingType::Shield => 8
             ]
         ],
         [
             "min_energy" => 1000000,
             "data" => [
-                BuildingType::Center => 10,
-                BuildingType::Mine => 10,
-                BuildingType::Energy => 10,
                 BuildingType::Cosmoport => 10,
-                BuildingType::Supply => 9, // not required very high if trade every minute and it close to the main planet
+                BuildingType::Supply => 7, // not required very high if trade every minute and it close to the main planet
                 BuildingType::Radar => 10,
                 BuildingType::Trade => 10,
                 BuildingType::Trainer => 10,
@@ -83,7 +88,7 @@ class Config
             ]
         ]
     ];
-*/
+
     // train 1 unit at once, all units = 100%, then divide between factories
     // on the plane
     // Train execute only after all other builds and upgrades
@@ -101,10 +106,10 @@ class Config
             "min_planets" => 1,
             "min_level" => 1,
             "data" => [
-                UnitType::Hornet => 1,
+                UnitType::Hornet => 3,
                 UnitType::Javeline => 1,
-                UnitType::Excalibur => 1,
-                UnitType::Valkyrie => 1
+                UnitType::Excalibur => 3,
+                UnitType::Valkyrie => 2
             ]
         ],
     ];
@@ -141,6 +146,8 @@ class Config
 	// train 1 units per a time
 	public static $HerculesTrainCount = 2;
     public static $LokiTrainCount = 10;
+    // other units train coint (1 is good)
+    public static $UnitTrainCount = 1;
 
     // Optimal quantity of hercules for orbital station
     // (actually any value should be ok, 100 is normal for any level, it may be good less if planets are low level)

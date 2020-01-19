@@ -69,4 +69,40 @@ class GalaxyHelper
 		
 		return intval($count);
 	}
+
+	public static function GetUnitQuantity($unitType, $userEnergy, $userLevel, $userPlanetCount, $planet_capital)
+    {
+        return self::getItemQuantity(Config::$ConstructUnits, $unitType, $userEnergy, $userLevel, $userPlanetCount, $planet_capital);
+    }
+
+    public static function GetUpgradeQuantity($buildingType, $userEnergy, $userLevel, $userPlanetCount, $planet_capital)
+    {
+        return self::getItemQuantity(Config::$UpgradeBuildings, $buildingType, $userEnergy, $userLevel, $userPlanetCount, $planet_capital);
+    }
+
+    public static function GetItemQuantity($items, $itemKey, $userEnergy, $userLevel, $userPlanetCount, $planet_capital)
+    {
+        $value = 0;
+        foreach ($items as $it)
+        {
+            if ( !array_key_exists("data", $it) || count($it["data"]) == 0)
+                continue;
+            if ( !array_key_exists($itemKey, $it["data"]) )
+                continue;
+            $is_capital = isset($it["is_capital"]) ? true : false;
+            if ($is_capital && !$planet_capital)
+                continue;
+            $min_energy = isset($it["min_energy"]) ? $it["min_energy"] : 0;
+            if ($userEnergy < $min_energy)
+                continue;
+            $min_planets = isset($it["min_planets"]) ? $it["min_planets"] : 0;
+            if ($userPlanetCount < $min_planets)
+                continue;
+            $min_level = isset($it["min_level"]) ? $it["min_level"] : 0;
+            if ($userLevel < $min_level)
+                continue;
+            $value = $it["data"][$itemKey];
+        }
+        return $value;
+    }
 }

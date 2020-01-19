@@ -25,40 +25,18 @@ class UpgradeHandler extends PlanetHandler
         // upgrade all required buildings
         foreach ($p->grids as $g)
         {
-            if ($g->level >= 10 || $g->upgrade != null)
+            if (!$g->building_id || $g->construction || $g->upgrade)
                 continue;
-            if ($g->building_id != BuildingType::Center &&
-                $g->building_id != BuildingType::Mine &&
-                $g->building_id != BuildingType::Energy &&
-                $g->building_id != BuildingType::Cosmoport &&
-                $g->building_id != BuildingType::Supply &&
-                $g->building_id != BuildingType::Radar &&
-                $g->building_id != BuildingType::Trade &&
-                $g->building_id != BuildingType::Trainer &&
-                $g->building_id != BuildingType::Turret &&
-                $g->building_id != BuildingType::Shield)
+            if ($g->level >= 10)
                 continue;
 
-
-            if ((!Config::$UpgradeCenter || $g->level > Config::$UpgradeCenter) && $g->building_id == BuildingType::Center)
-                continue;
-            if ((!Config::$UpgradeMine || $g->level > Config::$UpgradeMine) && $g->building_id == BuildingType::Mine)
-                continue;
-            if ((!Config::$UpgradeEnergy || $g->level > Config::$UpgradeEnergy) && $g->building_id == BuildingType::Energy)
-                continue;
-            if ((!Config::$UpgradeCosmoport || $g->level > Config::$UpgradeCosmoport) && $g->building_id == BuildingType::Cosmoport)
-                continue;
-            if ((!Config::$UpgradeSupply || $g->level > Config::$UpgradeSupply) && $g->building_id == BuildingType::Supply)
-                continue;
-            if ((!Config::$UpgradeRadar || $g->level > Config::$UpgradeRadar) && $g->building_id == BuildingType::Radar)
-                continue;
-            if ((!Config::$UpgradeTrade || $g->level > Config::$UpgradeTrade) && $g->building_id == BuildingType::Trade)
-                continue;
-            if ((!Config::$UpgradeTrainer || $g->level > Config::$UpgradeTrainer) && $g->building_id == BuildingType::Trainer)
-                continue;
-            if ((!Config::$UpgradeTurret || $g->level > Config::$UpgradeTurret) && $g->building_id == BuildingType::Turret)
-                continue;
-            if ((!Config::$UpgradeShield || $g->level > Config::$UpgradeShield) && $g->building_id == BuildingType::Shield)
+            // calc building upgrade level depending on user energy etc
+            $upgrade_level = GalaxyHelper::GetUpgradeQuantity($g->building_id,
+                                $user->energy,
+                                $user->level,
+                                count($p->planets),
+                                $p->is_capital);
+            if ($g->level > $upgrade_level)
                 continue;
 
             // check for enough energy
