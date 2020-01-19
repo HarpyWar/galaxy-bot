@@ -23,12 +23,24 @@ class GalaxyApp
      */
     private $cache;
 
+    public function __construct()
+    {
+        // set proxy if file exists
+        if (file_exists(Config::$UseProxyFile))
+        {
+            echo "use proxy mode\n";
+            echo "--------------\n";
+            Config::$UseProxy = true;
+        }
+    }
+
     public function Run()
     {
         $this->cache = new PlanetCache($this);
         while (true)
         {
             $this->iterateAccounts();
+            sleep(Config::$Delay);
         }
     }
 
