@@ -119,7 +119,7 @@ class TrainHerculesHandler extends PlanetHandler
         // optimal hercules quantity
         $herc_opt = GalaxyHelper::CalcOptimalHerculesCount($p->mining_rate, $p->x, $p->y, $orbital_x, $orbital_y);
         if ($p->is_capital)
-            $herc_opt = Config::$OrbitalHerculesOptimalCount;
+            $herc_opt = Config::$MinHerculesOrbitalCount;
         // difference to support or train
         $herc_diff = $herc_count - $herc_opt; // ! important order
 
@@ -193,20 +193,21 @@ class TrainHerculesHandler extends PlanetHandler
                         if ($herc_diff >= 0)
                             break;
 
-                        if ($g->building_id == BuildingType::Trainer && !$g->training) {
-                            $train_quantity = abs(ceil($herc_diff / $factory_count));
-                            if ($train_quantity == 0)
-                                $train_quantity = $herc_diff;
+                        if ($g->building_id != BuildingType::Trainer || $g->training)
+                            continue;
 
-                            $quantity = $train_quantity < Config::$HerculesTrainCount
-                                ? $train_quantity
-                                : Config::$HerculesTrainCount;
-                            $api->log("train " . $quantity . " hercules (required " . $herc_diff . ")");
-                            $api->Train(UnitType::Hercules, $quantity, $g->id);
+                        $train_quantity = abs(ceil($herc_diff / $factory_count));
+                        if ($train_quantity == 0)
+                            $train_quantity = $herc_diff;
 
-                            // subtract
-                            $herc_diff += $quantity;
-                        }
+                        $quantity = $train_quantity < Config::$HerculesTrainCount
+                            ? $train_quantity
+                            : Config::$HerculesTrainCount;
+                        $api->log("train " . $quantity . " hercules (required " . $herc_diff . ")");
+                        $api->Train(UnitType::Hercules, $quantity, $g->id);
+
+                        // subtract
+                        $herc_diff += $quantity;
                     }
                 }
             }

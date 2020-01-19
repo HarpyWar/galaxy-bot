@@ -28,7 +28,7 @@ class TrainLokiHandler extends PlanetHandler
         $myplanets = $this->account->myplanets;
         $expeditions = $this->account->expeditions;
 
-        // train loki on the main planet if not enough for two expeditions
+        // train loki only on the main planet (if not enough for Config::$ExpeditionsForLoki expeditions)
         if (!$p->is_capital)
             return;
 
