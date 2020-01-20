@@ -5,6 +5,7 @@ namespace GalaxyBot\Handlers;
 use GalaxyBot;
 use GalaxyBot\Config;
 use GalaxyBot\GalaxyHelper;
+use GalaxyBot\Common;
 use GalaxyBot\Types\UnitType;
 use GalaxyBot\Types\BuildingType;
 use GalaxyBot\Types\GridType;
@@ -32,8 +33,10 @@ class AccountExportHandler extends PlanetHandler
         // upgrade all required buildings
         foreach ($myplanets->planets as $mp)
         {
-            $planets[] = $mp->name;
-
+            $planets[] = [
+                'name' => $mp->name,
+                'resource_id' => $mp->resource_id
+            ];
 
             foreach ($mp->ships_count as $u => $quantity)
             {
@@ -54,13 +57,22 @@ class AccountExportHandler extends PlanetHandler
             'solarion' => $myplanets->solarion,
             'energy' => $user->energy,
             'level' => $user->level,
+            'production_rate' => $user->production_rate,
             'solarion' => $myplanets->solarion,
             'units' => $units,
             'planet_count' => count($planets),
             'planets' => $planets,
         ];
 
-        $filename = "accounts/" . $user->username . "_" . count($planets) . "_" . $user->energy . ".txt";
+        $path = 'accounts';
+
+        // delete old files for the account
+        foreach (new \DirectoryIterator($path) as $f) {
+            if (Common::StartsWith($f->getFilename(), $user->username))
+                unlink($path . '/' . $f->getFilename());
+        }
+
+        $filename = $path . '/' . $user->username . "_" . count($planets) . "_" . $user->energy . ".txt";
         file_put_contents($filename, json_encode($export, JSON_PRETTY_PRINT));
     }
 }
