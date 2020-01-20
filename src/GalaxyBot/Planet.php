@@ -36,6 +36,7 @@ class Planet
             new Handlers\ExpeditionsHandler($this, $account),
             new Handlers\MissionsHandler($this, $account),
             new Handlers\TrainUnitsHandler($this, $account),
+            new Handlers\AccountExportHandler($this, $account),
             //...
         ];
     }

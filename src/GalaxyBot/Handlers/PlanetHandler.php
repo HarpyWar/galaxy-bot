@@ -15,7 +15,7 @@ class PlanetHandler
     protected $account;
 
     // 'planet' run once per planet
-    // 'account' - run once per account
+    // 'user' - run once per account
     protected $scope = 'planet';
 
     public function __construct(Planet $planet, Account $account)
@@ -27,7 +27,7 @@ class PlanetHandler
     public function Execute()
     {
         // for account scope run only once (for capital planet)
-        if ($this->scope == 'account' && !$this->planet->p->is_capital)
+        if ($this->scope == 'user' && !$this->planet->p->is_capital)
             return false;
         #$this->account->api->log("exec " . get_class($this));
         return true;

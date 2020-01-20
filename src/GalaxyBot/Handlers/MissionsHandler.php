@@ -15,7 +15,7 @@ use GalaxyBot\Types\MineralType;
  */
 class MissionsHandler extends PlanetHandler
 {
-    protected $scope = 'account';
+    protected $scope = 'user';
 
     public function Execute()
     {

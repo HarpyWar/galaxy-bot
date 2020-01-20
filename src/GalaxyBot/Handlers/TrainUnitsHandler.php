@@ -55,9 +55,9 @@ class TrainUnitsHandler extends PlanetHandler
                 if ( !($grid_id = array_pop($factories)) )
                     break;
 
+                $units_built++;
                 $api->log("train unit " . $type);
                 $api->Train($type, $quantity, $grid_id);
-                $units_built++;
             }
 
             // cycle only if there are still factories available

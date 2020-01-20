@@ -67,7 +67,6 @@ class Config
                 BuildingType::Mine => 10,
                 BuildingType::Energy => 10,
                 BuildingType::Cosmoport => 7,
-                BuildingType::Supply => 6, // not required very high if trade every minute and it close to the main planet
                 BuildingType::Radar => 8,
                 BuildingType::Trade => 10,
                 BuildingType::Trainer => 8,
@@ -108,7 +107,7 @@ class Config
             "data" => [
                 UnitType::Hornet => 3,
                 UnitType::Javeline => 1,
-                UnitType::Excalibur => 3,
+                UnitType::Excalibur => 2,
                 UnitType::Valkyrie => 2
             ]
         ],
@@ -119,7 +118,7 @@ class Config
         BuildingType::Center => 1,      // max 1
         BuildingType::Energy => 1,      // max 1
         BuildingType::Cosmoport => 4,
-        BuildingType::Supply => 2,
+        BuildingType::Supply => 1,
         BuildingType::Radar => 1,       // max 1
         BuildingType::Trade => 1,
         BuildingType::Trainer => 5,     // max 5

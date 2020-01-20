@@ -15,7 +15,7 @@ use GalaxyBot\Types\MineralType;
  */
 class ExpeditionsHandler extends PlanetHandler
 {
-    protected $scope = 'account';
+    protected $scope = 'user';
 
     public function Execute()
     {
