@@ -68,4 +68,18 @@ class TrainUnitsHandler extends PlanetHandler
             }
         }
     }
+
+/*
+ * // undone feature to calc builds for a factory, but this is unnecesary because when a factory  free it will not produce units - this is not efficient
+    private function getTrainingCount($myplanets, $planetId, $unitType)
+    {
+        foreach ($myplanets as $p)
+        {
+            if ($p->ip != $planetId)
+                continue;
+            return $p->ships_traning->{$unitType};
+        }
+        return 0;
+    }
+*/
 }

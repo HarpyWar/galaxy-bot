@@ -1,0 +1,22 @@
+{
+    "remaining": 289,
+    "quantity": 3,
+    "units": [{
+            "id": 4,
+            "name": "\u00ab\u0425\u043e\u0440\u043d\u0435\u0442\u00bb F5",
+            "type": 2,
+            "speed": 3,
+            "attack": 150,
+            "defense": 50,
+            "supply": 5,
+            "train_cost": 500,
+            "train_time": 768,
+            "description": "\u0422\u044f\u0436\u0435\u043b\u044b\u0439 \u0448\u0442\u0443\u0440\u043c\u043e\u0432\u0438\u043a.",
+            "detection": null,
+            "capacity": 10,
+            "research_experience": 41125,
+            "research_cost": 82250,
+            "research_time": 164500
+        }
+    ]
+}

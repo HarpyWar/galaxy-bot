@@ -49,6 +49,9 @@ class Planet
         // preload general data
         $this->p = $this->account->api->GetPlanet();
 
+        // also update myplanets
+        $this->account->myplanets = $this->account->api->GetMyPlanets();
+
         // update planet cache
         $this->account->cache->set($this->p->id, "id", $this->p->id);
         $this->account->cache->set($this->p->id, "display_name", $this->p->display_name);

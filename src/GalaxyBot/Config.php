@@ -88,10 +88,9 @@ class Config
         ]
     ];
 
-    // train 1 unit at once, all units = 100%, then divide between factories
-    // on the plane
     // Train execute only after all other builds and upgrades
-    // "data" should contain max 5 items (1 for each factory)
+    // "data" should contain any items but first 5 will be in priority because of 5 factories max
+    // (all unit types must be unique inside "data" of each item)
     public static $ConstructUnits = [
         [
             "min_energy" => 1,
@@ -105,10 +104,10 @@ class Config
             "min_planets" => 1,
             "min_level" => 1,
             "data" => [
-                UnitType::Hornet => 3,
+                UnitType::Hornet => 1,
                 UnitType::Javeline => 1,
-                UnitType::Excalibur => 2,
-                UnitType::Valkyrie => 2
+                UnitType::Excalibur => 1,
+                UnitType::Valkyrie => 1
             ]
         ],
     ];
