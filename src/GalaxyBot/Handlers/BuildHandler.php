@@ -24,19 +24,22 @@ class BuildHandler extends PlanetHandler
         $user = $this->account->user;
         $api = $this->account->api;
 
+
+		$construction = false;
         // Build required buildings on the planet
-        foreach (Config::$RequiredBuildings as $btype => $bcount)
+        foreach (Config::$RequiredBuildings as $btype => $req_count)
         {
-            $count = 0;
+            $cur_count = 0;
             foreach ($p->grids as $g)
             {
                 // building is ready or in-construction
                 if ($g->building_id == $btype || ($g->construction && $g->construction->building_id == $btype))
-                    $count++;
+                    $cur_count++;
             }
             // if no buildings or not enough
-            if ($count < $bcount)
+            if ($cur_count < $req_count)
             {
+				$construction = true;
                 foreach ($p->grids as $g)
                 {
                     // ignore non-empty slots
@@ -51,6 +54,19 @@ class BuildHandler extends PlanetHandler
             }
         }
 
+		// fill empty slots
+		if (!$construction)
+		{
+			foreach ($p->grids as $g)
+			{
+				// ignore non-empty slots
+				if ($g->type != GridType::Empty || $g->building_id || $g->construction)
+					continue;
+				$api->log("build extra " . Config::$FillEmptyGridBuilding);
+				$api->Construct(Config::$FillEmptyGridBuilding, $g->id);
+			}
+		}
+		
         // Build all mineral fields on the planet
         foreach ($p->grids as $g)
         {
