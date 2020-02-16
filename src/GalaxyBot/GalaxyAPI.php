@@ -118,6 +118,18 @@ class GalaxyAPI
 		return $this->client->Post("/movement/patrol/" . $gridId, $data);
 	}
 
+
+	/*
+	 * Explore planet with loki
+	 */
+    public function ExplorePlanet($quantity, $planetId)
+    {
+        $data = [
+            "quantity" => $quantity
+        ];
+        return $this->client->Post("/movement/scout/" . $planetId, $data);
+    }
+
 	/*
 	 * $units = {"quantity":{"5":1, "6":5},"supports":[]}
 	 */

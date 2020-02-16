@@ -11,10 +11,10 @@ use GalaxyBot\Types\GridType;
 use GalaxyBot\Types\MineralType;
 use PHPUnit\TextUI\Help;
 
-class AttackHandler extends PlanetHandler
+class UnitActionHandler extends PlanetHandler
 {
     // without a slash at the end
-    private $path = "attack_queue";
+    private $path = "action_queue";
 
     public function Execute()
     {
@@ -59,13 +59,22 @@ class AttackHandler extends PlanetHandler
                 $result = $api->AttackPlanet($q->units, $q->target_planet_id);
             if ($q->action == 2)
                 $result = $api->OccupyPlanet($q->target_planet_id);
+            if ($q->action == 3)
+                $result = $api->ScoutPlanet($q->quantity, $q->target_planet_id);
 
-
-            $txt_action = $q->action == 0
-                ? "support"
-                : $q->action == 1
-                    ? "attack"
-                    : "occupy";
+            switch($q->action)
+            {
+                case 0:
+                    $txt_action = "support"; break;
+                case 1:
+                    $txt_action = "attack"; break;
+                case 2:
+                    $txt_action = "occupy"; break;
+                case 3:
+                    $txt_action = "scout"; break;
+                default:
+                    $txt_action = "unknown";
+            }
             $api->log($txt_action . " planet " . $q->target_planet_id . " " . ($result ? "successful" : "failed"));
             // a second between attacks
             sleep(1);
