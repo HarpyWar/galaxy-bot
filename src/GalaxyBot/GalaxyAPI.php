@@ -116,8 +116,26 @@ class GalaxyAPI
 			]
 		];
 		return $this->client->Post("/movement/patrol/" . $gridId, $data);
-	}	
-	
+	}
+
+	/*
+	 * $units = {"quantity":{"5":1, "6":5},"supports":[]}
+	 */
+    public function AttackPlanet($units, $planetId)
+    {
+        $data = $units;
+        return $this->client->Post("/movement/attack/" . $planetId, $data);
+    }
+    public function SupportPlanet($units, $planetId)
+    {
+        $data = $units;
+        return $this->client->Post("/movement/support/" . $planetId, $data);
+    }
+    public function OccupyPlanet($planetId)
+    {
+        return $this->client->Post("/movement/occupy/" . $planetId, []);
+    }
+
 	public function SupportUnit($unitType, $quantity, $planetId)
 	{
         $data = [
@@ -137,6 +155,8 @@ class GalaxyAPI
 	{
 		return $this->client->Post("/mission/" . $id, false);
 	}
+
+
 
 	
 	

@@ -1,0 +1,11 @@
+{
+	"source_planet_id": 1,
+	"target_planet_id": 2,
+	"action": 1, // 0 = support, 1 = attack
+	"units": {
+		"quantity": {
+			"5": 1
+		},
+		"supports":[]
+	}
+}
