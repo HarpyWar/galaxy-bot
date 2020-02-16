@@ -1,0 +1,13 @@
+{
+	"source_planet_id": 90350,
+	"target_planet_id": 96551,
+	"action": 0,
+	"units": {
+		"quantity": {
+			"4": 0,
+			"5": 0,
+			"6": 0
+		},
+		"supports":[]
+	}
+}
