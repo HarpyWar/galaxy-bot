@@ -105,9 +105,7 @@ class Config
             "min_level" => 1,
             "data" => [
                 UnitType::Hornet => 1,
-                UnitType::Javeline => 1,
                 UnitType::Excalibur => 1,
-                UnitType::Valkyrie => 1
             ]
         ],
     ];

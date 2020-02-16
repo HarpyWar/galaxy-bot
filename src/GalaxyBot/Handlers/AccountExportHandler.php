@@ -34,8 +34,10 @@ class AccountExportHandler extends PlanetHandler
         foreach ($myplanets->planets as $mp)
         {
             $planets[] = [
+                'id' => $mp->id,
                 'name' => $mp->name,
-                'resource_id' => $mp->resource_id
+                'resource_id' => $mp->resource_id,
+                'units' => $mp->ships_count
             ];
 
             foreach ($mp->ships_count as $u => $quantity)

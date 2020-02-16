@@ -25,7 +25,7 @@ class UnitTransferHandler extends PlanetHandler
         // send loki and valkyries to orbital station
         foreach ($p->units as $u)
         {
-            if ($u->id != UnitType::Loki) //  && $u->id != UnitType::Valkyrie
+            if ($u->id != UnitType::Loki && $u->id != UnitType::Valkyrie) 
                 continue;
             if ($u->quantity == 0)
                 continue;
