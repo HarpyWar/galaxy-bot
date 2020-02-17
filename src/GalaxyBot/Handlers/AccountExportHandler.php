@@ -31,12 +31,13 @@ class AccountExportHandler extends PlanetHandler
         // #########################################
         $units = [];
         $planets = [];
+        $planet_resources = [];
         $mining_rate = [];
-        if ($cache->isCached())
+        // fill empty array with available minerals
+        foreach (MineralType::$All as $m)
         {
-            // fill empty array with available minerals
-            foreach (MineralType::$All as $m)
-                $mining_rate[$m] = 0;
+            $mining_rate[$m] = 0;
+            $planet_resources[$m] = 0;
         }
 
         // upgrade all required buildings
@@ -58,6 +59,7 @@ class AccountExportHandler extends PlanetHandler
                     $units[$u] = 0;
                 $units[$u] += $quantity;
             }
+            $planet_resources[$mp->resource_id]++;
             if ($cache->isCached())
             {
                 $mining_rate[$mp->resource_id] += $cache->get($p->id, "mining_rate");
@@ -81,6 +83,7 @@ class AccountExportHandler extends PlanetHandler
             'units' => $units,
             'planet_count' => count($planets),
             'planets' => $planets,
+            'planet_resources' => $planet_resources
         ];
 
         if ($cache->isCached())
