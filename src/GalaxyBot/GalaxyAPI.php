@@ -57,13 +57,23 @@ class GalaxyAPI
 	{
 		return $this->client->Get("/mission");
 	}
-	
+	/*
+	 * General radar alerts
+	 */
+    public function GetMonitor()
+    {
+        return $this->client->Get("/monitor/show");
+    }
+
 	public function GetRadarMovements($gridId)
 	{
 		return $this->client->Get("/scout/" . $gridId);
 	}
-	
-	
+
+    public function SetProtectionShield($planetId)
+    {
+        return $this->client->Post("/shield/" . $planetId, []);
+    }
 	
 	public function Trade($mineralType, $quantity, $gridId)
 	{

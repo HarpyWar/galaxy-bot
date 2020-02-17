@@ -51,6 +51,7 @@ class Account
 
         $this->expeditions = $this->api->GetExpeditions();
         $this->missions = $this->api->GetMissions();
+        $this->monitor = $this->api->GetMonitor();
     }
 
 }

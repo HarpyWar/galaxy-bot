@@ -9,19 +9,23 @@ class GalaxyHelper
 	const InitSpeed = 2;
 	const HerculesSpeed = 2;
 	const HerculesCapacity = 100; // minerals
-	
-	public static function FindBuilding($buildingType, $grids)
+
+    /*
+     * $includeInConstruction - if true then include buildings which are in construiction mode (not ready yet)
+     */
+	public static function FindBuilding($buildingType, $grids, $includeInConstruction = true)
 	{
 		foreach ($grids as $g)
 		{
 			if ($g->building_id == $buildingType)
 			{
-				return $g->id;
+			    if (!$g->construction || ($g->construction && $includeInConstruction))
+				    return $g->id;
 			}
 		}
 		return false;
 	}
-	
+
 	/*
 	 * Path length between two planets
 	 */
