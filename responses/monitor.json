@@ -1,0 +1,45 @@
+GET
+https: //galaxy.bipgame.io/api/monitor
+{
+    "incoming": 1
+}
+
+GET
+https: //galaxy.bipgame.io/api/monitor/show
+
+// when incoming 8000 valkyries
+{
+    "incoming_movements": [{
+            "id": 9601011,
+            "type": 1,
+            "remaining": 306,
+            "start": {
+                "id": 84306,
+                "resource_id": 4,
+                "display_name": "Aleksio_Gray2",
+                "x": 46613,
+                "y": 90325
+            },
+            "end": {
+                "id": 102268,
+                "resource_id": 3,
+                "display_name": "y01",
+                "x": 47245,
+                "y": 88871
+            },
+            "ships": {
+                "7": 6000
+            }
+        }
+    ],
+    "next_time_to_see_ships": 0
+}
+
+// when no incoming
+{
+    "incoming_movements": [],
+    "next_time_to_see_ships": 0
+}
+
+// if end planet is ours and start planet is not ours
+// if there is no shield generator on the end planet || there are valkyries + titan attack detected from all incomings on the same planet

@@ -10,6 +10,9 @@ use GalaxyBot\Types\BuildingType;
 use GalaxyBot\Types\GridType;
 use GalaxyBot\Types\MineralType;
 
+/*
+ * Send all units except hercules from all planets to the orbital station
+ */
 class UnitTransferHandler extends PlanetHandler
 {
     private $supply_limit_percents = 95; // %
@@ -43,14 +46,14 @@ class UnitTransferHandler extends PlanetHandler
             if ($quantity == 0)
                 continue;
 
-            // for not green, yellow and blue planets - transfer all units except hercules
             if ($send_quantity <= 0)
             {
-                if ($p->resource_id > MineralType::Otarium)
-                {
-                    if ($u->id != UnitType::Loki && $u->id != UnitType::Valkyrie)
-                        continue;
-                }
+                // FIXME: for not green, yellow and blue planets - transfer all units except hercules
+                #if ($p->resource_id > MineralType::Otarium)
+                #{
+                #    if ($u->id != UnitType::Loki && $u->id != UnitType::Valkyrie)
+                #        continue;
+                #}
             }
             else
             {

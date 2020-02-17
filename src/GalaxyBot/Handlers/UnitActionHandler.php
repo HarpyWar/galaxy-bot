@@ -11,6 +11,9 @@ use GalaxyBot\Types\GridType;
 use GalaxyBot\Types\MineralType;
 use PHPUnit\TextUI\Help;
 
+/*
+ * Read action files from action_queue directory and execute it. Also delete every file there
+ */
 class UnitActionHandler extends PlanetHandler
 {
     // without a slash at the end

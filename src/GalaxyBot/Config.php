@@ -116,7 +116,7 @@ class Config
         BuildingType::Energy => 1, 
      // max 1
         BuildingType::Cosmoport => 4,
-        BuildingType::Supply => 1,
+        //BuildingType::Supply => 1, // FIXME: do not build supply because if shield was killed and there are no supply then shield will not be built
         BuildingType::Radar => 1,       // max 1
         BuildingType::Trade => 1,
         BuildingType::Trainer => 5,     // max 5
