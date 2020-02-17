@@ -55,5 +55,6 @@ class MissionsHandler extends PlanetHandler
                 break;
             }
         }
+        $cache->set($p->id, "mining_rate", $p->mining_rate);
     }
 }

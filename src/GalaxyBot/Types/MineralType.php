@@ -12,4 +12,16 @@ class MineralType
     const Neodium = 6;
     const Minterium = 7;
     const Solarium = 8;
+
+    // just array of all available minerals
+    public static $All = [
+        self::Torium,
+        self::Vanadium,
+        self::Otarium,
+        self::Chromium,
+        self::Cladium,
+        self::Neodium,
+        self::Minterium,
+        self::Solarium
+    ];
 }

@@ -15,13 +15,13 @@ class UnitType
 
     // just array of all available units
     public static $All = [
-        self::Hercules, // 1
-        self::Loki,     // 2
-        self::Raptor,   // 3
-        self::Hornet,   // 4
-        self::Javeline, // 5
-        self::Excalibur,// 6
-        self::Valkyrie, // 7
-        self::Titan     // 8
+        self::Hercules,
+        self::Loki,
+        self::Raptor,
+        self::Hornet,
+        self::Javeline,
+        self::Excalibur,
+        self::Valkyrie,
+        self::Titan
     ];
 }

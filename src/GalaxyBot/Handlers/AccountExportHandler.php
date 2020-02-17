@@ -26,13 +26,21 @@ class AccountExportHandler extends PlanetHandler
         $api = $this->account->api;
         $myplanets = $this->account->myplanets;
         $expeditions = $this->account->expeditions;
+        $cache = $this->account->cache;
 
         // #########################################
         $units = [];
         $planets = [];
-        // upgrade all required buildings
-        foreach ($myplanets->planets as $mp)
+        $mining_rate = [];
+        if ($cache->isCached())
         {
+            // fill empty array with available minerals
+            foreach (MineralType::$All as $m)
+                $mining_rate[$m] = 0;
+        }
+
+        // upgrade all required buildings
+        foreach ($myplanets->planets as $mp) {
             $planets[] = [
                 'id' => $mp->id,
                 'name' => $mp->name,
@@ -40,17 +48,19 @@ class AccountExportHandler extends PlanetHandler
                 'units' => $mp->ships_count
             ];
 
-            foreach ($mp->ships_count as $u => $quantity)
-            {
+            foreach ($mp->ships_count as $u => $quantity) {
                 if (!array_key_exists($u, $units))
                     $units[$u] = 0;
                 $units[$u] += $quantity;
             }
-            foreach ($mp->ships_traning as $u => $quantity)
-            {
+            foreach ($mp->ships_traning as $u => $quantity) {
                 if (!array_key_exists($u, $units))
                     $units[$u] = 0;
                 $units[$u] += $quantity;
+            }
+            if ($cache->isCached())
+            {
+                $mining_rate[$mp->resource_id] += $cache->get($p->id, "mining_rate");
             }
         }
         // also count units on orbital station
@@ -66,12 +76,17 @@ class AccountExportHandler extends PlanetHandler
             'solarion' => $myplanets->solarion,
             'energy' => $user->energy,
             'level' => $user->level,
-            'production_rate' => $user->production_rate,
+            'production_rate' => $user->production_rate, // energy per a hour
             'solarion' => $myplanets->solarion,
             'units' => $units,
             'planet_count' => count($planets),
             'planets' => $planets,
         ];
+
+        if ($cache->isCached())
+        {
+            $export['mining_rate'] = $mining_rate; // minerals per a hour
+        }
 
         $path = 'accounts';
 

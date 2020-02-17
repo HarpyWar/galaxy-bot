@@ -3,6 +3,9 @@
 namespace GalaxyBot;
 use GalaxyBot\Config;
 
+/*
+ * Used to save radar data to reduce requests count to the game server
+ */
 class PlanetCache
 {
     /**
