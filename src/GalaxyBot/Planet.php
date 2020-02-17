@@ -38,6 +38,7 @@ class Planet
             new Handlers\TrainUnitsHandler($this, $account),
             new Handlers\AccountExportHandler($this, $account),
             new Handlers\UnitActionHandler($this, $account),
+            new Handlers\SellOrbitalResourceHandler($this, $account),
             //...
         ];
     }

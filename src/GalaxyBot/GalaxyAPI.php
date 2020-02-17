@@ -84,7 +84,7 @@ class GalaxyAPI
 	}
 
 	// convert minerals to energy
-    public function Minerals2Energy($mineralType, $quantity, $gridId)
+    public function SellResource($mineralType, $quantity, $gridId)
     {
         $data = [
             "quantity" => $quantity

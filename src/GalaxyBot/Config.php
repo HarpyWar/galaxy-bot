@@ -123,10 +123,12 @@ class Config
 		BuildingType::Turret => 1,
         BuildingType::Shield => 1,       // max 1
     ];
-	
+
 	// fill empty grids with the following building type
 	public static $FillEmptyGridBuilding = BuildingType::Turret;
 
+    // sell only greater than this value for each type of resources
+    public static $ResourceSellLimit = 1000000;
 
 	/*
 	public static $UpgradeCenter = true;

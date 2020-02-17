@@ -11,7 +11,7 @@ use GalaxyBot\Types\GridType;
 use GalaxyBot\Types\MineralType;
 
 
-class Minerals2EnergyHandler extends PlanetHandler
+class SellPlanetResourceHandler extends PlanetHandler
 {
     public function Execute()
     {
@@ -29,7 +29,7 @@ class Minerals2EnergyHandler extends PlanetHandler
             if ($energy_id = GalaxyHelper::FindBuilding(BuildingType::Energy, $p->grids))
             {
                 $api->log("convert " . $p->capacity . " minerals to energy");
-                $api->Minerals2Energy($p->resource_id, $p->capacity, $energy_id);
+                $api->SellResource($p->resource_id, $p->capacity, $energy_id);
             }
         }
     }
