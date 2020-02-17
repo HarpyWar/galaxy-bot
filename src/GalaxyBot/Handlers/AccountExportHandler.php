@@ -25,7 +25,7 @@ class AccountExportHandler extends PlanetHandler
         $user = $this->account->user;
         $api = $this->account->api;
         $myplanets = $this->account->myplanets;
-
+        $expeditions = $this->account->expeditions;
 
         // #########################################
         $units = [];
@@ -52,6 +52,13 @@ class AccountExportHandler extends PlanetHandler
                     $units[$u] = 0;
                 $units[$u] += $quantity;
             }
+        }
+        // also count units on orbital station
+        foreach ($expeditions->units as $u)
+        {
+            if (!array_key_exists($u->id, $units))
+                $units[$u->id] = 0;
+            $units[$u->id] += $u->quantity;
         }
 
         $export = [
