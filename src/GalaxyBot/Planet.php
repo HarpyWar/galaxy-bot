@@ -24,7 +24,7 @@ class Planet
         $this->account = $account;
         // define all handlers here
         $this->handlers = [
-            new Handlers\Minerals2EnergyHandler($this, $account),
+            new Handlers\SellPlanetResourceHandler($this, $account),
             new Handlers\TrainHerculesHandler($this, $account),
             new Handlers\BuildHandler($this, $account),
             new Handlers\TrainLokiHandler($this, $account),

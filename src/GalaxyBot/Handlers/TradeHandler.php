@@ -49,7 +49,7 @@ class TradeHandler extends PlanetHandler
         foreach ($p->resources as $r)
         {
             // minerals per hercules
-            $hercules_supply = 100;
+            $hercules_supply = 1000;
 
             // enough to trade
             if ($r->quantity >= $hercules_supply)
